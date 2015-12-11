@@ -1,17 +1,14 @@
-window.rockPaperScissors = {
-  gameState: {
-    userScore = 0,
-    oppScore = 0,
-    roundCount = 1,
-    buttonChoice = ["Rock", "Paper", "Scissors"]
-    }
-}
+var userScore =  0;
+var oppScore = 0;
+var roundCount = 1;
+var computerChoice = ["Rock", "Paper", "Scissors"];
+var playerChoice;
+
 $(document).ready(function() {
 
-  $(".gameButtons").on("click", function({
-    var computerChoice = Math.floor(Math.random() * buttonChoice.length);
-    
-    if (computerChoice) === parseInt($(this).attr("data-selection")))
-      }
+  $(".gameButtons").on("click", function(){
+    playerChoice = $(this).attr('data-choice');
+    console.log(playerChoice);  
   });
+  var
 });

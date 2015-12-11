@@ -1,9 +1,16 @@
-
 $(document).ready(function(){
-  var userScore = 0, computerScore = 0, roundCount = 1;
-  $("#incUserBtn").on("click", function(){
-    userScore++;
-    $("#userScore").html(userScore);
+  var gameState = {
+    userScore: 0, 
+    computerScore: 0, 
+    roundCount: 1
+  }
+
+  $(".btn-primary").on("click", function() {
+    var tagName = $(this).attr("data-tag");
+    gameState[tagName]++; 
+
+    $("#" + tagName).html(gameState[tagName]);
+
 
   });
 

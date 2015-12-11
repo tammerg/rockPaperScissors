@@ -10,9 +10,5 @@ $(document).ready(function(){
     gameState[tagName]++; 
 
     $("#" + tagName).html(gameState[tagName]);
-
-
   });
-
-
 });

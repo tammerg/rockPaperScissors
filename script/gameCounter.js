@@ -1,10 +1,3 @@
-window.rockPaperScissors = {
-  gameState: {
-    userScore: 0,
-    computerScore: 0,
-    roundCount: 1
-  }
-}
 $(document).ready(function() {
   var myWords = ["Rock", "Paper", "Scissors"];
 

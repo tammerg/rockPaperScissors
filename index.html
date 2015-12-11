@@ -6,46 +6,30 @@
   <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-  <div>
-    <h1>change me!</h1>
-  </div>
   <header class="text-center">
     <button class="btn btn-primary start" id="changeWordBtn">Start</button>
   </header>
   <br>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <strong>User Score: </strong><span id="userScore">0</span>
-        <br />
-        <button class="btn btn-primary" data-tag="userScore">User Score</button>
-      </div>
-      <div class="col-md-4">
-        <strong>Opponent Score: </strong><span id="computerScore">0</span>
-        <br />
-        <button class="btn btn-primary" data-tag="computerScore">Opponent Score</button>
-      </div>
-      <div class="col-md-4">
-        <strong>Round: </strong><span id="roundCount">0</span>
-        <br />
-        <button class="btn btn-primary" data-tag="roundCount">Round</button>
-      </div>
+
     </div>
     <div class="row">
       <h3>Choose your weapon!</h3>
         <div class="col-md-4">
-          <button class="btn btn-warning">Rock</button>
+          <button class="btn btn-warning gameButtons" id="btnRock">Rock</button>
         </div>
         <div class="col-md-4">
-          <button class="btn btn-warning">Paper</button>
+          <button class="btn btn-warning gameButtons" id="btnPaper">Paper</button>
         </div>
         <div class="col-md-4">
-          <button class="btn btn-warning">Scissors</button>
+          <button class="btn btn-warning gameButtons" id="btnScissors">Scissors</button>
         </div>
     </div>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <script type="text/javascript" src="script/gameCounter.js"></script>
   <script type="text/javascript" src="script/scoreTracker.js"></script>
+  <script type="text/javascript" src="script/rps.js"></script>
 </body>
 </html>

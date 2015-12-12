@@ -8,32 +8,33 @@ var playerChoice;
 
 function gameLogic(playerChoice, oppChoice) {
   if(playerChoice === oppChoice){
-    console.log("You got a tie!");
+    $("#result").html("You got a tie!");
 } else if (playerChoice === "Rock"){
   if(oppChoice === "Paper"){
-    console.log("You Lose :(");
+    $("#result").html("You Lose");
   }else {
-    console.log("You Win");
+    $("#result").html("You Win");
   }
 }
   else if (playerChoice === "Paper"){
     if(oppChoice === "Rock"){
-      console.log("You Win :)");
+      $("#result").html("You Win");
   }else {
-    console.log("You Lose!");
+    $("#result").html("You Lose!");
   }
 }
   else if (playerChoice === "Scissors"){
     if(oppChoice === "Paper"){
-      console.log("You Win :)");
+      $("#result").html("You Win");
   }else {
-    console.log("You Lose!");
+    $("#result").html("You Lose");
   }
 }
 } 
 $(document).ready(function() {
 
   $(".gameButtons").on("click", function(){
+    $("#resultModal").modal('show');
     playerChoice = $(this).attr('data-choice');
     var randomIndex = Math.floor(Math.random()*computerChoice.length); 
     var oppChoice = computerChoice[randomIndex];

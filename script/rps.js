@@ -1,4 +1,3 @@
-
 var userScore =  0;
 var oppScore = 0;
 var roundCount = 1;

@@ -4,6 +4,7 @@
   <title>Rock Paper Scissors</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/spacelab/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
@@ -38,16 +39,17 @@
     <div class="row">
       <h2> Rock Paper Scissors </h2>
       <h3>Choose your weapon!</h3>
-      <div class="col-md-4">
-        <button class="btn btn-warning gameButtons rock" id="btnRock" data-choice="Rock">Rock</button>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-1">
+         <button class="btn btn-warning gameButtons rock" id="btnRock" data-choice="Rock">Rock</button>
       </div>
       <div class="col-md-4">
         <button class="btn btn-warning gameButtons paper" id="btnPaper" data-choice="Paper">Paper</button>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <button class="btn btn-warning gameButtons scissors" id="btnScissors" data-choice="Scissors">Scissors</button>
       </div>
-    </div>
     <div>
       <div id="resultModal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog">

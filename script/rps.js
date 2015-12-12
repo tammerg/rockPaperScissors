@@ -4,8 +4,10 @@ var roundCount = 1;
 var computerChoice = ["Rock", "Paper", "Scissors"];
 var playerChoice;
 
-function gameLogic(playerChoice, computerChoice){}
 
+function gameLogic() {
+
+} 
 $(document).ready(function() {
 
   $(".gameButtons").on("click", function(){

@@ -3,15 +3,40 @@
 <head>
   <title>Rock Paper Scissors</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/spacelab/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-  <header class="text-center">
-    <button class="btn btn-primary start" id="changeWordBtn">Start</button>
-  </header>
-  <br>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Tammer Galal</a>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Me<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://github.com/tammerg">Github</a></li>
+              <li><a href="http://stackoverflow.com/users/5451564/tammerg">StackOverflow</a></li>
+              <li><a href="https://twitter.com/tammergalal">Twitter</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">My Portfolio</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="container">
     <div class="row">
+      <h2> Rock Paper Scissors </h2>
       <h3>Choose your weapon!</h3>
       <div class="col-md-4">
         <button class="btn btn-warning gameButtons rock" id="btnRock" data-choice="Rock">Rock</button>

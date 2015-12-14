@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="stylesheet" type="text/css" href="style/animations.css">
+  <link href="css/hover.css" rel="stylesheet" media="all">
 </head>
 <body>
   <nav class="navbar navbar-inverse">
@@ -38,19 +39,19 @@
   </nav>
   <div class="container">
     <div class="row"> 
-      <h2 class="slideLeft"> Rock</h2> <h2>Paper</h2> <h2 class="slideRight"> Scissors </h2>
+      <h2 class="slideLeft"> Rock</h2> <h2 class="bigEntrance">Paper</h2> <h2 class="slideRight"> Scissors </h2>
       <h3>Choose your weapon!</h3>
     </div>
     <br/>
     <div class="row btn-row">
       <div class="col-md-4 col-md-offset-1">
-         <i class="bigEntrance rock fa fa-hand-rock-o fa-5x gameButtons" id="btnrock" data-choice="Rock"></i>
+         <i class="hvr-float bigEntrance rock fa fa-hand-rock-o fa-5x gameButtons" id="btnrock" data-choice="Rock"></i>
       </div>
       <div class="col-md-4">
-        <i class="bigEntrance paper fa fa-hand-paper-o fa-5x gameButtons" id="btnpaper" data-choice="Paper"></i>
+        <i class="hvr-float bigEntrance paper fa fa-hand-paper-o fa-5x gameButtons" id="btnpaper" data-choice="Paper"></i>
       </div>
       <div class="col-md-3">
-        <i class="bigEntrance scissors fa fa-hand-scissors-o fa-5x gameButtons" id="btnscissors" data-choice="Scissors"></i>
+        <i class="hvr-float bigEntrance scissors fa fa-hand-scissors-o fa-5x gameButtons" id="btnscissors" data-choice="Scissors"></i>
       </div>
     <div>
       <div id="resultModal" class="modal fade" tabindex="-1" role="dialog">
@@ -71,7 +72,7 @@
       </div>
       <br/>
       <br/>
-      <div class="row">
+      <div class="row tableBtn">
         <table class="table table-bordered">
           <thead>
             <th>Username</th>
@@ -85,16 +86,14 @@
           </tbody>
         </table>
       </div>
-      <br/>
-      <br/>
-      <div class="row">
-        <i class="fa fa-ban fa-stack-2x text-danger"></i>
-        <br/>
-        <br/>
-        <p class="cheats">NO CHEATERS</p>
-      </div>
     </div>
   </div>
+  <footer>
+    <i class="fa fa-ban fa-stack-2x text-danger"></i>
+    <br/>
+    <br/>
+    <p class="cheats">NO CHEATERS</p>
+  </footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="script/rps.js"></script>

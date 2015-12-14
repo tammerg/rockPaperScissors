@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cyborg/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style/style.css">
@@ -36,19 +36,19 @@
     </div>
   </nav>
   <div class="container">
-    <div class="row">
+    <div class="row"> 
       <h2> Rock Paper Scissors </h2>
       <h3>Choose your weapon!</h3>
     </div>
     <div class="row">
       <div class="col-md-4 col-md-offset-1">
-         <button class="btn btn-warning gameButtons rock" id="btnRock" data-choice="Rock">Rock</button>
+         <button class="rock fa fa-hand-rock-o fa-5x gameButtons" rock id="btnRock" data-choice="Rock"></button>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-warning gameButtons paper" id="btnPaper" data-choice="Paper">Paper</button>
+        <button class="paper fa fa-hand-paper-o fa-5x gameButtons" id="btnPaper" data-choice="Paper"></button>
       </div>
       <div class="col-md-3">
-        <button class="btn btn-warning gameButtons scissors" id="btnScissors" data-choice="Scissors">Scissors</button>
+        <button class="scissors fa fa-hand-scissors-o fa-5x gameButtons" id="btnScissors" data-choice="Scissors"></button>
       </div>
     <div>
       <div id="resultModal" class="modal fade" tabindex="-1" role="dialog">
@@ -62,15 +62,13 @@
               <p id="result"></p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal"></button>
-              <button type="button" class="btn btn-primary">YES!!!</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Thanks!</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="script/rps.js"></script>

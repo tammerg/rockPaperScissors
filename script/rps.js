@@ -39,5 +39,6 @@ $(document).ready(function() {
     var oppChoice = computerChoice[randomIndex];
     gameLogic(playerChoice, oppChoice);
     
+    
   });
 });

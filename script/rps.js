@@ -33,12 +33,11 @@ function gameLogic(playerChoice, oppChoice) {
 $(document).ready(function() {
 
   $(".gameButtons").on("click", function(){
-    $("#resultModal").modal('show');
-    playerChoice = $(this).attr('data-choice');
-    var randomIndex = Math.floor(Math.random()*computerChoice.length); 
-    var oppChoice = computerChoice[randomIndex];
-    gameLogic(playerChoice, oppChoice);
-    
-    
+    $(this).addClass("bigEntrance");
+      $("#resultModal").modal('show');
+        playerChoice = $(this).attr('data-choice');
+        var randomIndex = Math.floor(Math.random()*computerChoice.length); 
+        var oppChoice = computerChoice[randomIndex];
+        gameLogic(playerChoice, oppChoice);
   });
 });

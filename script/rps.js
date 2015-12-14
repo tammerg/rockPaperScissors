@@ -40,4 +40,7 @@ $(document).ready(function() {
         var oppChoice = computerChoice[randomIndex];
         gameLogic(playerChoice, oppChoice);
   });
+  $(".leaders").on("click",function(){
+    $(".tableBtn").fadeIn(3000);
+  });
 });

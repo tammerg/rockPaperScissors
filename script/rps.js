@@ -1,32 +1,44 @@
-var userScore =  0;
-var oppScore = 0;
+var userWins =  0;
+var oppWins = 0;
 var roundCount = 1;
 var computerChoice = ["Rock", "Paper", "Scissors"];
 var playerChoice;
 
 
 function gameLogic(playerChoice, oppChoice) {
+   roundCount++;
+  $("#roundCount").html("Round:" + roundCount);
   if(playerChoice === oppChoice){
     $("#result").html("You got a tie!");
 } else if (playerChoice === "Rock"){
   if(oppChoice === "Paper"){
     $("#result").html("You Lose");
+    oppWins++;
   }else {
     $("#result").html("You Win");
+    userWins++;
+      $("#userWins").html("User Wins:" + userWins);
   }
 }
   else if (playerChoice === "Paper"){
     if(oppChoice === "Rock"){
       $("#result").html("You Win");
+      userWins++;
+        $("#userWins").html("User Wins:" + userWins);
   }else {
     $("#result").html("You Lose!");
+    oppWins++;
+      $("#oppWins").html("Computer Wins:" + oppWins);
   }
 }
   else if (playerChoice === "Scissors"){
     if(oppChoice === "Paper"){
       $("#result").html("You Win");
+      userWins++;
   }else {
     $("#result").html("You Lose");
+    oppWins++;
+      $("#oppWins").html("Computer Wins:" + oppWins);
   }
 }
 } 
@@ -46,7 +58,7 @@ $(document).ready(function() {
   $(".btn-primary").on("click", function() {
     var v1 = $("<h2>").html("Choose your weapon").fadeIn(1500);
       $(".startBtn").empty();
-        $(".startBtn").append(v1);
+        $(".startBtn").append(v1).addClass(red);
 
   });
 });

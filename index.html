@@ -38,7 +38,15 @@
   </nav>
   <div class="container">
     <div class="row"> 
-      <h1 class="slideLeft"> Rock</h1> <h1 class="bigEntrance">Paper</h1> <h1 class="slideRight"> Scissors </h1>
+      <div class="col-md-4 slideRight"> 
+        <h2>Rock</h2> 
+      </div>
+      <div>
+        <h2 class="col-md-4 bigEntrance">Paper</h2> 
+      </div>
+      <div>
+        <h2 class="col-md-4 slideLeft"> Scissors </h2>
+      </div>
     </div>
     <div class="row startBtn">
       <button class="btn btn-primary">Start!</button>
@@ -55,6 +63,15 @@
         <i class="hvr-float bigEntrance scissors fa fa-hand-scissors-o fa-5x gameButtons" id="btnscissors" data-choice="Scissors"></i>
       </div>
     <div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="row">
+      <p class="col-md-3" id="userWins"> User Wins:0</p>
+      <p class="col-md-3" id="oppWins"> Computer Wins:0</p>
+      <p class="col-md-3" id="roundCount"> Round:1</p>
+    </div>
       <div id="resultModal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog">
           <div class="modal-content">

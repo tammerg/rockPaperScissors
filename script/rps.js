@@ -34,7 +34,7 @@ $(document).ready(function() {
 
   $(".gameButtons").on("click", function(){
     $(this).addClass("bigEntrance");
-      $("#resultModal").modal('show');
+      $("#resultModal").modal('show').delay(3000);
         playerChoice = $(this).attr('data-choice');
         var randomIndex = Math.floor(Math.random()*computerChoice.length); 
         var oppChoice = computerChoice[randomIndex];
@@ -42,5 +42,9 @@ $(document).ready(function() {
   });
   $(".leaders").on("click",function(){
     $(".tableBtn").fadeIn(3000);
+  });
+  $(".btn-primary").on("click",function(){
+      $(".btn-primary").replaceWith("<h2>" + "Choose Your Weapon" + "</h2>");
+        $("<h2>").fadeIn(7000);
   });
 });

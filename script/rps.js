@@ -1,3 +1,4 @@
+var ties = 0;
 var userWins =  0;
 var oppWins = 0;
 var roundCount = 1;
@@ -9,34 +10,36 @@ function gameLogic(playerChoice, oppChoice) {
    roundCount++;
   $("#roundCount").html("Round:" + roundCount);
   if(playerChoice === oppChoice){
-    $("#result").html("You got a tie!" + "Oppenent Chose:" + oppChoice);
+    $("#result").html("You got a tie!" + "---" + "Oppenent Chose:" + oppChoice);
+    ties++;
+      $("#ties").html("Ties:" + ties)
 } else if (playerChoice === "Rock"){
   if(oppChoice === "Paper"){
-    $("#result").html("You Lose!" + "Oppenent Chose:" + oppChoice);
+    $("#result").html("You Lose!" + "---" + "Oppenent Chose:" + oppChoice);
     oppWins++;
   }else {
-    $("#result").html("You Win!" + "Oppenent Chose:" + oppChoice);
+    $("#result").html("You Win!" + "---" + "Oppenent Chose:" + oppChoice);
     userWins++;
       $("#userWins").html("User Wins:" + userWins);
   }
 }
   else if (playerChoice === "Paper"){
     if(oppChoice === "Rock"){
-      $("#result").html("You Win!" + "Oppenent Chose:" + oppChoice);
+      $("#result").html("You Win!" + "---" + "Oppenent Chose:" + oppChoice);
       userWins++;
         $("#userWins").html("User Wins:" + userWins);
   }else {
-    $("#result").html("You Lose!" + "Oppenent Chose:" + oppChoice);
+    $("#result").html("You Lose!" + "---" + "Oppenent Chose:" + oppChoice);
     oppWins++;
       $("#oppWins").html("Computer Wins:" + oppWins);
   }
 }
   else if (playerChoice === "Scissors"){
     if(oppChoice === "Paper"){
-      $("#result").html("You Win!" + "Oppenent Chose:" + oppChoice);
+      $("#result").html("You Win!" + "---" + "Oppenent Chose:" + oppChoice);
       userWins++;
   }else {
-    $("#result").html("You Lose!" + "Oppenent Chose:" + oppChoice);
+    $("#result").html("You Lose!" + "---" + "Oppenent Chose:" + oppChoice);
     oppWins++;
       $("#oppWins").html("Computer Wins:" + oppWins);
   }

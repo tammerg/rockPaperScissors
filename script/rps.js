@@ -12,31 +12,31 @@ function gameLogic(playerChoice, oppChoice) {
     $("#result").html("You got a tie!" + "Oppenent Chose:" + oppChoice);
 } else if (playerChoice === "Rock"){
   if(oppChoice === "Paper"){
-    $("#result").html("You Lose");
+    $("#result").html("You Lose!" + "Oppenent Chose:" + oppChoice);
     oppWins++;
   }else {
-    $("#result").html("You Win");
+    $("#result").html("You Win!" + "Oppenent Chose:" + oppChoice);
     userWins++;
       $("#userWins").html("User Wins:" + userWins);
   }
 }
   else if (playerChoice === "Paper"){
     if(oppChoice === "Rock"){
-      $("#result").html("You Win");
+      $("#result").html("You Win!" + "Oppenent Chose:" + oppChoice);
       userWins++;
         $("#userWins").html("User Wins:" + userWins);
   }else {
-    $("#result").html("You Lose!");
+    $("#result").html("You Lose!" + "Oppenent Chose:" + oppChoice);
     oppWins++;
       $("#oppWins").html("Computer Wins:" + oppWins);
   }
 }
   else if (playerChoice === "Scissors"){
     if(oppChoice === "Paper"){
-      $("#result").html("You Win");
+      $("#result").html("You Win!" + "Oppenent Chose:" + oppChoice);
       userWins++;
   }else {
-    $("#result").html("You Lose");
+    $("#result").html("You Lose!" + "Oppenent Chose:" + oppChoice);
     oppWins++;
       $("#oppWins").html("Computer Wins:" + oppWins);
   }

@@ -9,7 +9,7 @@ function gameLogic(playerChoice, oppChoice) {
    roundCount++;
   $("#roundCount").html("Round:" + roundCount);
   if(playerChoice === oppChoice){
-    $("#result").html("You got a tie!");
+    $("#result").html("You got a tie!" + "Oppenent Chose:" + oppChoice);
 } else if (playerChoice === "Rock"){
   if(oppChoice === "Paper"){
     $("#result").html("You Lose");

@@ -34,7 +34,13 @@ h1, h2, h3, h4, strong{
 .tableBtn, .gameButtons {
   display:none;
 }
+.game{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  color: white;
 
+}
 
 .hvr-float {
   display: inline-block;

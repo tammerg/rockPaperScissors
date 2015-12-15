@@ -43,8 +43,10 @@ $(document).ready(function() {
   $(".leaders").on("click",function(){
     $(".tableBtn").fadeIn(3000);
   });
-  $(".btn-primary").on("click",function(){
-      $(".btn-primary").replaceWith("<h2>" + "Choose Your Weapon" + "</h2>");
-        $("<h2>").fadeIn(7000);
+  $(".btn-primary").on("click", function() {
+    var v1 = $("<h2>").html("Choose your weapon").fadeIn(1500);
+      $(".startBtn").empty();
+        $(".startBtn").append(v1);
+
   });
 });

@@ -1,4 +1,6 @@
-
+body {
+  background:#000;
+}
 footer{
   bottom: 0;
  position: absolute;
